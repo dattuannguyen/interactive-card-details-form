@@ -104,9 +104,10 @@ body{
 .display .wrapper-info{
     position: relative;
     /*top: 20%;*/
-    margin-top: 15rem;
-    /*: 10%;*/
+    margin-top: 12rem;
+    /*!*: 10%;*!*/
     margin-right: 8rem;
+    margin-left: 10rem;
     width: 450px;
     height: auto;
 }
