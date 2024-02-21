@@ -21,12 +21,6 @@ const continue_btn = document.getElementById("continue-btn")
 
 cardholder_name.addEventListener("input",()=>{
     display_name.innerText = cardholder_name.value;
-    // let checked_name1 = checked_name;
-
-    if (cardholder_name.value === 0){
-        return checked_name = false;
-        // console.log(checked_name);
-    }
 })
 
 card_number.addEventListener("input",()=>{
@@ -36,9 +30,9 @@ card_number.addEventListener("input",()=>{
 
 month.addEventListener("input",()=>{
     if (month.value >= 1 && month.value <= 9) {
-        return display_month.innerText = "0" + month.value.slice(0,2);;
+        return display_month.innerText = "0" + month.value.slice(0,2);
     } else {
-        return display_month.innerText = month.value.slice(0,2);;
+        return display_month.innerText = month.value.slice(0,2);
     }
 })
 
