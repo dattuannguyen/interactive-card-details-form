@@ -97,7 +97,7 @@ const checked_number = (number_input) =>{
             break;
         }
     }
-    if (hasLetter){
+    if (hasLetter || number_input.length===0){
         err_number.classList.remove("hidden");
         card_number.classList.add("errstate")
     }
