@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="style.css" rel="stylesheet">
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="display">
+    <div class="card-info">
+      <div class="card-front">
+        <img src="images/card-logo.svg" alt="card-logo">
+        <h2 id="display-card-number">0000 0000 0000 0000</h2>
+        <div class="cardholder-date">
+          <p id="display-ch-name">Jane Appleseed</p>
+          <p><span id="display-month">00</span>/<span id="display-year">00</span></p>
+        </div>
+      </div>
+
+      <div class="card-back">
+        <p id="display-cvc">000</p>
+      </div>
+    </div>
+
+    <div class="wrapper-info">
+      <div class="first-state">
+        <section>
+          <label for="cardholder-name">Cardholder Name</label>
+          <input type="text" id="cardholder-name" placeholder="e.g. Jane Appleseed">
+          <p  id="error-ch-message" class="hidden">Can't be blank</p>
+        </section>
+        <section>
+          <label for="card-number">Card Number</label>
+          <input type="text" id="card-number" placeholder="e.g. 1234 5678 9123 0000" maxlength="20">
+          <p id="error-number-message" class="hidden">Wrong format, numbers only</p>
+        </section>
+        <div class="exp-date-and-cvc">
+          <section>
+            <div class="exp-date">
+              <label>Exp. Date (MM/YY)</label>
+              <input type="text" id="exp-month" placeholder="MM" maxlength="2">
+              <input type="text" id="exp-year"  placeholder="YY" maxlength="2">
+              <p id="error-date-message" class="hidden">Can't be blank</p>
+            </div>
+          </section>
+          <section>
+            <div class="cvc">
+              <label for="cvc" ><span>CVC</span></label>
+              <input type="text" id="cvc" placeholder="e.g. 123" maxlength="3">
+              <p id="error-cvc-message" class="hidden">Can't be blank</p>
+            </div>
+          </section>
+        </div>
+        <button>Confirm</button>
+      </div>
+
+
+
+      <div class="active-state hidden">
+        <img src="images/icon-complete.svg" alt="icon-complete">
+        <h1>Thank you!</h1>
+        <p>We've added your card details</p>
+
+        <button id="continue-btn">Continue</button>
+      </div>
+    </div>
+
+  </div>
+
+
+
+<script src="script.js" type="text/javascript"></script>
+  
+<!--  <div class="attribution">-->
+<!--    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. -->
+<!--    Coded by <a href="#">Your Name Here</a>.-->
+<!--  </div>-->
+</body>
+</html>
