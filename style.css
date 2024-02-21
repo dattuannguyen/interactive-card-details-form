@@ -96,9 +96,9 @@ body{
 .display .wrapper-info{
     position: relative;
     /*top: 20%;*/
-    margin-top: 10rem;
+    margin-top: 15rem;
     /*: 10%;*/
-    margin-right: 5rem;
+    margin-right: 15rem;
     width: 500px;
     height: auto;
 }
